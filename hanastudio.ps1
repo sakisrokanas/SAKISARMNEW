@@ -5,16 +5,16 @@ param (
     
     #Get the bits for the HANA installation and copy them to C:\SAPbits\SAP_HANA_STUDIO\
     $hanadest = "C:\SapBits"
-    $sapcarUri = $baseUri + "/SapBits/SAP_HANA_STUDIO/sapcar.exe" 
+    $sapcarUri = $baseUri + "/SapBits/SAP_HANA_STUDIO/SAPCAR.EXE"
     $hanastudioUri = $baseUri + "/SapBits/SAP_HANA_STUDIO/IMC_STUDIO2_212_2-80000323.SAR" 
-    $jreUri = $baseUri + "/SapBits/SAP_HANA_STUDIO/serverjre-9.0.1_windows-x64_bin.tar.gz"
-    $puttyUri = "https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.70-installer.msi"
-    $7zUri = "http://www.7-zip.org/a/7z1701-x64.msi"
+    $jreUri = $baseUri + "/SapBits/SAP_HANA_STUDIO/jdk-12_windows-x64_bin.exe"
+    $puttyUri = "https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe"
+    #7zUri = "http://www.7-zip.org/a/7z1701-x64.msi"
     $sapcardest = "C:\SapBits\SAP_HANA_STUDIO\sapcar.exe"
     $hanastudiodest = "C:\SapBits\SAP_HANA_STUDIO\IMC_STUDIO2_212_2-80000323.SAR"
-    $jredest = "C:\Program Files\serverjre-9.0.1_windows-x64_bin.tar.gz"
-    $puttydest = "C:\SapBits\SAP_HANA_STUDIO\putty-64bit-0.70-installer.msi"
-    $7zdest = "C:\Program Files\7z.msi"
+    $jredest = "C:\Program Files\jdk-12_windows-x64_bin.exe"
+    $puttydest = "C:\SapBits\SAP_HANA_STUDIO\putty.exe"
+    #7zdest = "C:\Program Files\7z.msi"
     $jrepath = "C:\Program Files"
     $hanapath = "C:\SapBits\SAP_HANA_STUDIO"
     if((test-path $hanadest) -eq $false)
