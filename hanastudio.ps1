@@ -7,7 +7,7 @@ param (
     $hanadest = "C:\SapBits"
     $sapcarUri = $baseUri + "/SapBits/SAP_HANA_STUDIO/SAPCAR.EXE"
     $hanastudioUri = $baseUri + "/SapBits/SAP_HANA_STUDIO/IMC_STUDIO2_212_2-80000323.SAR" 
-    $jreUri = $baseUri + "/SapBits/SAP_HANA_STUDIO/jdk-12_windows-x64_bin.exe"
+    $jreUri = $baseUri + "/SapBits/SAP_HANA_STUDIO/jdk-12_windows-x64_bin.zip"
     $puttyUri = "https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe"
     #7zUri = "http://www.7-zip.org/a/7z1701-x64.msi"
     $sapcardest = "C:\SapBits\SAP_HANA_STUDIO\sapcar.exe"
@@ -40,4 +40,4 @@ param (
     set PATH=%PATH%C:\Program Files\jdk-12\bin;
     set HDB_INSTALLER_TRACE_FILE=C:\Users\testuser\Documents\hdbinst.log
     cd C:\SAPbits\SAP_HANA_STUDIO\SAP_HANA_STUDIO\
-    .\C:\SAPbits\SAP_HANA_STUDIO\SAP_HANA_STUDIO\hdbinst.exe -a C:\SAPbits\SAP_HANA_STUDIO\SAP_HANA_STUDIO\studio -b --path="C:\Program Files\sap\hdbstudio"
+    .\"C:\SAPbits\SAP_HANA_STUDIO\SAP_HANA_STUDIO\hdbinst.exe" -a C:\SAPbits\SAP_HANA_STUDIO\SAP_HANA_STUDIO\studio -b --path="C:\Program Files\sap\hdbstudio"
