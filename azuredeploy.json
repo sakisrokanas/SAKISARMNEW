@@ -192,7 +192,7 @@
     },
   "variables": {
     "vmName": "[toLower(parameters('vmName'))]",
-    "baseUri": "https://https://github.com/sakisrokanas/SAKISARMNEW/master/",
+    "baseUri": "https://raw.githubusercontent.com/sakisrokanas/SAKISARMNEW/master/",
     "smallUri": "[concat(variables('baseUri'),'Vms/small.json')]",
     "mediumUri": "[concat(variables('baseUri'),'Vms/medium.json')]",
     "largeUri": "[concat(variables('baseUri'),'Vms/large.json')]",
