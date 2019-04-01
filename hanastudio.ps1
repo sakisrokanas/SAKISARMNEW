@@ -35,9 +35,10 @@ param (
        
     
     write-host "extracting and installing HANA Studio"
+    Set-Location C:\SapBits\SAP_HANA_STUDIO	
     .\sapcar.exe -xfv IMC_STUDIO2_212_2-80000323.SAR
     
     set PATH=%PATH%C:\Program Files\jdk-12\bin;
     set HDB_INSTALLER_TRACE_FILE=C:\Users\testuser\Documents\hdbinst.log
-    cd C:\SAPbits\SAP_HANA_STUDIO\SAP_HANA_STUDIO\
-    .\"C:\SAPbits\SAP_HANA_STUDIO\SAP_HANA_STUDIO\hdbinst.exe" -a C:\SAPbits\SAP_HANA_STUDIO\SAP_HANA_STUDIO\studio -b --path="C:\Program Files\sap\hdbstudio"
+    Set-Location C:\SAPbits\SAP_HANA_STUDIO\SAP_HANA_STUDIO\
+    .\hdbinst.exe -a C:\SAPbits\SAP_HANA_STUDIO\SAP_HANA_STUDIO\studio -b --path="C:\Program Files\sap\hdbstudio"
