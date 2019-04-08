@@ -8,7 +8,7 @@ param (
     $sapcarUri = $baseUri + "/SapBits/SAP_HANA_STUDIO/SAPCAR.EXE"
     $hanastudioUri = $baseUri + "/SapBits/SAP_HANA_STUDIO/IMC_STUDIO2_212_2-80000323.SAR" 
     $jreUri = $baseUri + "/SapBits/SAP_HANA_STUDIO/jdk-12_windows-x64_bin.zip"
-    $puttyUri = "https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe"
+    $puttyUri = $baseUri + "/SapBits/SAP_HANA_STUDIO/putty.exe"
     #7zUri = "http://www.7-zip.org/a/7z1701-x64.msi"
     $sapcardest = "C:\SapBits\SAP_HANA_STUDIO\sapcar.exe"
     $hanastudiodest = "C:\SapBits\SAP_HANA_STUDIO\IMC_STUDIO2_212_2-80000323.SAR"
